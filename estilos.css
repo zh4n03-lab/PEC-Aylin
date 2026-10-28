@@ -1,0 +1,446 @@
+*{
+    margin:2;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(160, 217, 221);
+    color:rgb(96, 115, 156);
+    line-height: 1.0;
+}
+
+a{
+    color: rgb(90, 121, 205);
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(206, 236, 241);
+    color: rgb(88, 138, 134);
+    padding: 20px;
+    text-align: center;
+}
+
+<!--aqui va la uul
+nav ul{
+    list-style: circle;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(67, 115, 129);
+    text-decoration: bisque;
+    font-weight: 100;
+}
+
+main{
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: rgb(147, 172, 245);
+    padding: 10px;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(143, 175, 212);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: aquamarine;
+    text-align: center;
+}
+
+menu {
+display: flex;
+gap: 10px;
+}
+
+menu button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+content{
+    display: none;
+}
+
+#inicio{
+    display: block;
+}
+
+.relaxsong {
+    background-color: #e8f5e9;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 450px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.relaxsong h2 {
+    color: #7ba3af;
+}
+
+.relaxsong p {
+    color: #80839c;
+    line-height: 1.6;
+}
+
+.relaxsong audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.boton-depresion {
+    display: block;
+    margin: 30px auto;
+    background-color: #79b5a1;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.boton-depresion:hover {
+    background-color: #4e8f7a;
+    transform: scale(1.05);
+}
+
+/* FONDO GENERAL */
+
+body {
+    background: linear-gradient(135deg, #dff6f0, #dbeafe);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #456b75;
+}
+
+/* CONTENEDOR DE INFORMACIÓN */
+
+.informacion-depresion {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #e8f5e9;
+    border-radius: 25px;
+    font-family: Arial, sans-serif;
+    color: #456b60;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.informacion-depresion[hidden] {
+    display: none;
+}
+
+.informacion-depresion h1 {
+    text-align: center;
+    color: #39755c;
+}
+
+/* FRASE INSPIRADORA */
+
+.frase {
+    text-align: center;
+    font-style: italic;
+    color: #648b7a;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS DE INFORMACIÓN */
+
+.tarjeta {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    border-left: 6px solid #88bfa9;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta h2 {
+    color: #43876c;
+    margin-top: 0;
+}
+
+.tarjeta p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.tarjeta li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* MENSAJE FINAL */
+
+.mensaje-final {
+    background-color: #d2ebe0;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.mensaje-final h2 {
+    color: #39755c;
+}
+
+.mensaje-final p {
+    line-height: 1.8;
+}
+
+/* FONDO GENERAL */
+
+body {
+    background: linear-gradient(135deg, #dff6f0, #dbeafe);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #456b75;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+    max-width: 850px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* TÍTULO */
+
+h1 {
+    font-size: 35px;
+    color: #467e91;
+    margin-bottom: 20px;
+}
+
+/* FRASE INSPIRADORA */
+
+.frase {
+    font-size: 19px;
+    font-style: italic;
+    color: #6796a2;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+/* TARJETAS DE INFORMACIÓN */
+
+.tarjeta {
+    background-color: rgba(255,255,255,0.9);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    text-align: left;
+    border-left: 6px solid #91c9c1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h2 {
+    color: #488f91;
+    margin-top: 0;
+}
+
+.tarjeta p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.tarjeta li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* SECCIÓN DE RESPIRACIÓN */
+
+.respiracion {
+    background-color: #d4eee9;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.respiracion h2 {
+    color: #397e80;
+}
+
+.respiracion p {
+    line-height: 1.8;
+}
+
+/* MENSAJE FINAL */
+
+.mensaje-final {
+    background-color: #c9e7ef;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.mensaje-final h2 {
+    color: #397e91;
+}
+
+.mensaje-final p {
+    line-height: 1.8;
+}
+
+/* BOTÓN PARA REGRESAR */
+
+.boton {
+    display: inline-block;
+    background-color: #70aaa8;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #438785;
+    transform: scale(1.05);
+}
+
+/* SECCIÓN DEL CARRUSEL */
+
+.seccion-carrusel {
+    text-align: center;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+}
+
+.seccion-carrusel h2 {
+    color: #39755c;
+    font-size: 30px;
+}
+
+.seccion-carrusel p {
+    color: #628b7a;
+    font-size: 17px;
+}
+
+/* CONTENEDOR */
+
+.carrusel {
+    position: relative;
+    max-width: 750px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* IMÁGENES */
+
+.imagenes-carrusel {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* IMAGEN VISIBLE */
+
+.slide.activo {
+    display: block;
+    animation: aparecer 0.7s ease-in-out;
+}
+
+/* ANIMACIÓN */
+
+@keyframes aparecer {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* BOTONES */
+
+.anterior,
+.siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    color: #39755c;
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.anterior {
+    left: 15px;
+}
+
+.siguiente {
+    right: 15px;
+}
+
+.anterior:hover,
+.siguiente:hover {
+    background-color: white;
+}
+
+/* FRASE FINAL */
+
+.frase-carrusel {
+    font-style: italic;
+    color: #39755c;
+}

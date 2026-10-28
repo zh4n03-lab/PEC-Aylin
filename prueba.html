@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrusel de imágenes</title>
+
+    <style>
+
+        body {
+            background-color: #dff1ea;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #39755c;
+        }
+
+        .carrusel {
+            position: relative;
+            width: 80%;
+            max-width: 700px;
+            height: 350px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .carrusel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .carrusel img.activa {
+            display: block;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 15px;
+            border: none;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 10;
+        }
+
+        .anterior {
+            left: 10px;
+        }
+
+        .siguiente {
+            right: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>🌿 Un momento para ti</h1>
+
+    <div class="carrusel">
+
+        <img src="imagenes/imagen1.jpg" class="activa">
+
+        <img src="imagenes/imagen2.jpg">
+
+        <img src="imagenes/imagen3.jpg">
+
+        <button class="anterior" onclick="mover(-1)">
+            ❮
+        </button>
+
+        <button class="siguiente" onclick="mover(1)">
+            ❯
+        </button>
+
+    </div>
+
+    <script>
+
+        let posicion = 0;
+
+        const fotos = document.querySelectorAll(".carrusel img");
+
+        function mover(numero) {
+
+            fotos[posicion].classList.remove("activa");
+
+            posicion = posicion + numero;
+
+            if (posicion >= fotos.length) {
+                posicion = 0;
+            }
+
+            if (posicion < 0) {
+                posicion = fotos.length - 1;
+            }
+
+            fotos[posicion].classList.add("activa");
+
+        }
+
+        // Cambio automático cada 3 segundos
+        setInterval(function() {
+            if (fotos.length > 1) {
+                mover(1);
+            }
+        }, 3000);
+
+    </script>
+
+</body>
+</html>
